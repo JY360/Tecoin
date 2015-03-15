@@ -1367,7 +1367,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     // Heavycoin Temporal Retargeting - exits "blackhole" in ~3hrs
     if (pindexLast->nHeight > nLifeWindow && count < nLifeWindow/4) {
         int min = nLifeWindow/4 - count;
-        printf("Retarget: **** Heavycoin Temporal Retargeting **** %d/%d : factor = %d\n",
+        printf("Retarget: **** Tecoin Temporal Retargeting **** %d/%d : factor = %d\n",
                count, (int)nLifeWindow/4, (int)pow(2.0f, min));
 
         bnNew *= (int)pow(2.0f, min);
@@ -5926,7 +5926,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
 void static HeavycoinMiner(CWallet *pwallet)
 {
-    printf("HeavycoinMiner started\n");
+    printf("TecoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("heavycoin-miner");
 
@@ -5950,7 +5950,7 @@ void static HeavycoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running HeavycoinMiner with %"PRIszu" transactions in block (%u bytes)\n",
+        printf("Running TecoinMiner with %"PRIszu" transactions in block (%u bytes)\n",
                pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
@@ -6036,7 +6036,7 @@ void static HeavycoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("HeavycoinMiner terminated\n");
+        printf("TecoinMiner terminated\n");
         throw;
     }
 }
