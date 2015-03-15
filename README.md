@@ -43,9 +43,8 @@ Specifications
 * Starting block reward: 0 (for first 100 blocks ~ 3.3 hours)
 * Block reward: 150 max (decentralized block reward voting)
 * Total supply: 460,000,576 to 469,521,976 TEC (depending on decentralized block reward voting)
-* Multipool protection: Kimoto Gravity Well Temporal Retargeting
-* Premine: 1-2% (depending on total supply) for future development, support and maintenance
-* Bounties: 1-2% (depending on total supply) for strategic direction and promoting of Tecoin
+* Multipool protection:  Temporal Retargeting
+
 
 
 
