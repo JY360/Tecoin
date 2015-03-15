@@ -1,5 +1,4 @@
 echo "checkpoints=o" >> ~/.tecoin/tecoin.conf
-echo "testnet=1" >> ~/.tecoin/tecoin.conf
 echo "addnode=node1.tecoin.net" >> ~/.tecoin/tecoin.conf
 echo "addnode=node2.tecoin.net" >> ~/.tecoin/tecoin.conf
 echo "addnode=node3.tecoin.net" >> ~/.tecoin/tecoin.conf
